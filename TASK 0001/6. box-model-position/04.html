@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		
+		.clearfix:after{
+			content:"";
+			display: block;
+			clear:both;
+		}
+		.main{
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+		.side_left{
+			width: 210px;
+			float:left;
+			background-color: red;
+		}
+		.side_right{
+			width: 210px;
+			float:right;
+			background-color: yellow;
+		}
+		.side_middle{
+			margin:0 -500px 0 210px ;
+			width: 100%;
+		}
+		/*.side_left{
+			width: 210px;
+			position: absolute;
+			background-color: red;
+			top:0;
+			left:0;
+		}
+		.side_right{
+			width: 210px;
+			position: absolute;
+			background-color: yellow;
+			top:0;
+			right:0;
+		}
+		.side_middle{
+			margin:0 210px;
+			width: 100%;
+		}
+		
+	</style>
+</head>
+<body>
+	<!-- 需求：用两种不同的方式来实现一个三列布局，其中左侧和右侧的部分宽度固定，中间部分宽度随浏览器宽度的变化而自适应变化 -->
+	
+	<div class="main clearfix">
+		<div class="side_middle">side_middle</div>
+		<div class="side_left">side_left</div>
+		<div class="side_right">side_right</div>
+	</div>
+</body>
+</html>

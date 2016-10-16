@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body{ 
+			margin:0; 
+			padding:0; 
+			width: 100%;
+			font-size:30px; 
+			color:#fff;
+		}
+		.clearfix:after{
+			content:"";
+			display: block;
+			clear:both;
+		}
+		
+		/*绝对定位的方法*/
+		.ab-wrap,.fl-wrap{
+			width: 100%;
+			height:100%;
+			position: relative;
+			margin-bottom: 80px;
+		}
+		.ab-left{ 
+			position: absolute;
+			left:0;
+			top:0;
+			width:200px;
+			height:100%;
+			background:blue;
+		}
+		.ab-main{
+			width: 100%;
+			height: 100%;
+			/*因为 left 绝对定位已经脱离文档流，故right的margin-left不设定为 left  的宽度的话，会相互覆盖*/
+			margin-left: 200px;
+			background-color: green;
+		}
+		
+
+		/*浮动的方法*/
+		.fl-left{ 
+			width:200px;
+			height:100%;
+			background:blue;
+			float：left;
+		}
+		.fl-main{
+			width:100%;
+			height:100%;
+			background:green;
+			float：left;
+			margin: 100% 0 0 200px;
+		} 
+		
+		
+	</style>
+</head>
+<body>
+	<!-- 需求：用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化  -->
+	
+		
+	<div class="ab-wrap">
+		<div class="ab-main">
+			ab-main
+		</div>
+		<div class="ab-left"> 
+			ab-left
+		</div>
+	</div>
+
+	<div class="fl-wrap">
+		<div class="fl-left"> 
+			fl-left
+		</div>
+		<div class="fl-main">
+			fl-main
+		</div>
+	</div>
+	
+</body>
+</html>
