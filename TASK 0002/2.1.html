@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a= [];
+	var b = function(){
+		alert(1);
+	}
+	
+	/*
+	二：  JavaScript数据类型及语言基础
+
+	*在Js中检测对象类型的常见方法:
+	* 1、typeof 操作符： 对于Function， String， Number ，Undefined 等几种类型的对象来说可以检验
+	* 2、instanceof 操作符： 返回一个 Boolean 值，指出对象是否是特定类的一个实例 使用方法：result = object instanceof class   但是有跨frame对象构建的问题
+	* 3、 Object.prototype.toString 得到的结果为"[object class]"  [[]]用来表示语言内部用到的、外部不可直接访问的属性，称为“内部属性”。利用这个方法，再配合call，我们可以取得任何对象的内部属性[[Class]]
+	 */
+	
+	/*实践判断各种数据类型的方法*/
+	
+	// 1、封装 判断是否是数组
+	function isArray(arr){
+		//面向对象的方法
+		return Object.prototype.toString.apply(arr) === `[object Array]`;
+	}
+	console.log(isArray(a));
+	
+	// 2、封装 判断是否是函数
+	function isFunction(fn){
+		return typeof fn === "function";
+	}
+	console.log(isFunction(b));
+	
+
+	/*了解值类型和引用类型的区别，了解各种对象的读取、遍历方式*/
+	
+	/*3、使用递归来实现一个深度克隆，复制一个目标对象，返回一个完整拷贝
+	被复制的对象类型会被限制为数字、字符串、布尔值、日期、数组、object对象，不会包含函数、正则对象等*/
+	// 判断类型
+	function cloneObject(src){
+		var obj = {};
+		for(var attr in src){
+			if ( typeof src[attr] != "object" && typeof src[attr] != "function" ){
+				obj[attr] = src[attr];
+			}
+			else {
+				if( typeof src[attr] === "function" || Object.prototype.toString.apply(src[attr]) === "[object RegExp]"){
+					continue;
+				}
+				else{
+					obj[attr] = src[attr];
+					return obj;
+					
+				}
+			}
+			return obj ;
+		}
+	}
+	console.log(cloneObject(srcObj));
+// 测试用例：
+var srcObj = {
+    a: 1,
+    b: {
+        b1: ["hello", "hi"],
+        b2: "JavaScript"
+    }
+};
+var abObj = srcObj;
+var tarObj = cloneObject(srcObj);
+
+srcObj.a = 2;
+srcObj.b.b1[0] = "Hello";
+
+console.log(abObj.a);
+console.log(abObj.b.b1[0]);
+
+// console.log(tarObj.a);      // 1
+// console.log(tarObj.b.b1[0]);    // "hello"
+
+
+/*学习数组、字符串、数字等相关方法*/
+
+/*4、实现一个简单的trim函数，用于去除一个字符串，头部和尾部的空白字符
+ 假定空白字符只有半角空格、Tab
+ 练习通过循环，以及字符串的一些基本方法，分别扫描字符串str头部和尾部是否有连续的空白字符，并且删掉他们，最后返回一个完成去除的字符串*/
+ function simpleTrim(str) {
+    var a = 0;
+    var b = 0;
+    
+    for (var i = 0; i < str.length; i++) {
+    	if ( str.charAt(i) != " "){
+    		a = i;
+    		break;
+    	}
+    }
+    for (var i = str.length-1; i > -1; i--) {
+    	if ( str.charAt(i) != " "){
+    		b = i;
+    		break;
+    	}
+    }
+    return str.slice(a,b+1);
+}
+
+// 对字符串头尾进行空格字符的去除、包括全角半角空格、Tab等，返回一个字符串
+// 尝试使用一行简洁的正则表达式完成该题目
+function trim(str) {
+    return str.replace(/^\s+|\s+$/g,"");
+}
+// 使用示例
+var str = '   hi!  ';
+var str = '   abs df  ';
+// str = trim(str);
+console.log(simpleTrim(str)); // 'hi!'
+
+// 5、实现一个遍历数组的方法，针对数组中每一个元素执行fn函数，并将数组索引和元素作为参数传递
+function each(arr, fn) {
+	for (var i = 0; i < arr.length; i++) {
+		fn(arr[i],i);
+	}
+}
+
+// 其中fn函数可以接受两个参数：item和index
+
+// 使用示例
+	var arr = ['java', 'c', 'php', 'html'];
+	function output(item) {
+	    console.log(item);
+	}
+	each(arr, output);  // java, c, php, html
+	// 使用示例
+	var arr = ['java', 'c', 'php', 'html'];
+	function output(item, index) {
+	    console.log(index + ': ' + item)
+	}
+	each(arr, output);  // 0:java, 1:c, 2:php, 3:html
+
+// 6、获取一个对象里面第一层元素的数量，返回一个整数
+	function getObjectLength(obj) {
+		var n = 0;
+		for (var attr in obj){
+			n++;
+		}
+		return n;
+	}
+
+// 使用示例
+	var obj = {
+	    a: 1,
+	    b: 2,
+	    c: {
+	        c1: 3,
+	        c2: 4
+	    }
+	};
+	console.log(getObjectLength(obj)); // 3
+
+// 学习正则表达式
+// 7、判断是否为邮箱地址
+function isEmail(emailStr) {
+    var re = /\w[-\w.+]*@([A-Za-z0-9][-A-Za-z0-9]+\.)+[A-Za-z]{2,14}/ ;
+    return re.test(emailStr);
+}
+// console.log(isEmail("sj@qq12.com"));
+// 8、判断是否为手机号
+function isMobilePhone(phone) {
+   var re = /0?1[2-8][0-9]{9}/;
+   return re.test(phone);
+}
+
+</script>
+</body>
+</html>

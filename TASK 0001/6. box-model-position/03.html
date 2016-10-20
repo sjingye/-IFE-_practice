@@ -17,8 +17,8 @@
 			clear:both;
 		}
 		
-		/*绝对定位的方法*/
-		.ab-wrap,.fl-wrap{
+		/*浮动加定位的方法，类似圣杯布局*/
+		.ab-wrap{
 			width: 100%;
 			height:100%;
 			position: relative;
@@ -41,7 +41,7 @@
 		}
 		
 
-		/*浮动的方法*/
+		/*多加一层div，类似双飞翼布局的方法*/
 		.fl-left{ 
 			width:200px;
 			height:100%;
@@ -53,7 +53,7 @@
 			height:100%;
 			background:green;
 			float：left;
-			margin: 100% 0 0 200px;
+			margin: 0 0 0 200px;
 		} 
 		
 		
@@ -61,7 +61,6 @@
 </head>
 <body>
 	<!-- 需求：用两种不同的方法来实现一个两列布局，其中左侧部分宽度固定、右侧部分宽度随浏览器宽度的变化而自适应变化  -->
-	
 		
 	<div class="ab-wrap">
 		<div class="ab-main">
@@ -73,12 +72,15 @@
 	</div>
 
 	<div class="fl-wrap">
+		<div class="fl-main">
+			<div class="fl-main-wrap">
+				fl-main-wrap，真正的主体
+			</div>
+		</div>
 		<div class="fl-left"> 
 			fl-left
 		</div>
-		<div class="fl-main">
-			fl-main
-		</div>
+		
 	</div>
 	
 </body>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.fl{
+			float:left;
+		}
+		.de{
+			font-weight: bold;
+			color:red;
+		}
+	</style>
+</head>
+<body>
+	<p class="fl de">
+		<span id = "span1">
+			everything is ok
+		</span>
+		<span id = "span2">
+			everything is wrong
+		</span>
+	</p>
+
+
+<script type="text/javascript">
+	var p = document.querySelector("p");
+	var spans = document.querySelectorAll(".de span")
+
+function addClass(element, newClassName) {
+var arrClass = element.className.split(" ");
+if ( arrClass.indexof(newClassName) === -1 ){
+	arrClass.push(newClassName);
+	element.className = arrClass.join(" ");
+}
+}
+
+// 移除element中的样式oldClassName
+/* var removeClass = function(element, classname) {
+    var classes = element.className.split(' ');
+    var _index = classes.indexOf(classname);
+    if (_index != -1) {
+        classes.splice(_index, 1);
+        element.className = classes.join(' ');
+    }
+}*/
+
+function removeClass(element, oldClassName) {
+var arrClass = element.className.split(" ");
+var index = arrClass.indexOf(oldClassName);
+if ( index !== -1 ){
+	arrClass.splice(index,1);
+	element.className = arrClass.join(" ");
+}
+}
+
+/*addClass(p,"fr");
+console.log(p.className)*/
+
+removeClass(p,"fl");
+
+function isSiblingNode(element, siblingNode) {
+	if (element.parentNode === siblingNode.parentNode){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+console.log(isSiblingNode(spans[0],spans[1]));
+console.log(isSiblingNode(p,spans[1]));
+console.log(isSiblingNode(document.body,spans[1]));
+
+function addEvent(element, event, listener) {
+    // var p = element._proto_.prototype;
+    // p[event] = listener;
+}
+
+function a(){
+	console.log("加上事件了");
+}
+addEvent(spans[0], "click", a);
+console.log(spans[0]._proto_)
+</script>
+</body>
+</html>
