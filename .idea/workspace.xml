@@ -2,46 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b654471d-3dc5-44e0-b312-d2755822a7d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task1-8/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task1-8/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task1-8/index.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TASK 0002/1.1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TASK 0002/2.1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TASK 0002/3.1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TASK 0002/4.1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TASK 0002/f.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/6. box-model-position/02.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/6. box-model-position/03.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/6. box-model-position/04.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/6. box-model-position/05.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/.idea/7.personal-blog.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/about.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/blog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/css/about.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/css/blog.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/css/fixIE.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/css/gallery.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/css/globle.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/css/public.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/css/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/design/banner-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/design/icon-github.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/design/task0001_1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/design/task0001_1_marked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/design/task0001_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/design/task0001_2_marked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/design/task0001_3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/design/task0001_3_marked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/design/task0001_4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/design/task0001_4_marked.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/gallery.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/task1-3/7.personal-blog/index.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task1-12/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/task1-12/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task1-3/README.md" afterPath="$PROJECT_DIR$/task1-3/README.md" />
     </list>
     <ignored path="IFE-practice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -105,14 +68,14 @@
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task1-8/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
+            <state relative-caret-position="42">
               <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/task1-8/README.md">
           <provider editor-type-id="MarkdownFxPreviewEditor">
             <state />
@@ -121,6 +84,42 @@
             <state split_layout="FIRST">
               <first_editor relative-caret-position="126">
                 <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task1-12/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="78" column="10" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task1-12/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/task1-12/README.md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="105">
+                <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -151,6 +150,9 @@
         <option value="$PROJECT_DIR$/task1-8/index.html" />
         <option value="$PROJECT_DIR$/task1-8/index.scss" />
         <option value="$PROJECT_DIR$/task1-8/README.md" />
+        <option value="$PROJECT_DIR$/task1-12/index.html" />
+        <option value="$PROJECT_DIR$/task1-12/index.css" />
+        <option value="$PROJECT_DIR$/task1-12/README.md" />
       </list>
     </option>
   </component>
@@ -219,7 +221,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="task1-8" />
+              <option name="myItemId" value="task1-12" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -311,12 +313,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1483842101862</updated>
-      <workItem from="1483842103415" duration="13353000" />
+      <workItem from="1483842103415" duration="17675000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13353000" />
+    <option name="totallyTimeSpent" value="17675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -396,7 +398,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task1-8/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="42">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
@@ -410,6 +412,36 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="126">
             <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task1-12/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="78" column="10" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task1-12/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task1-12/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="105">
+            <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
             <folding />
           </first_editor>
           <second_editor />
