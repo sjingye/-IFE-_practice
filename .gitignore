@@ -44,5 +44,5 @@ Temporary Items
 
 
 
-node_modules/*/**
-.idea/*/**
+node_modules/*
+.idea/*

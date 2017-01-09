@@ -19,7 +19,7 @@ function addAqiData() {
     var cityValue = cityInput.value.trim();
     var valueValue = valueInput.value.trim();
     if( !cityValue.match(/^[\u4e00-\u9fa5a-zA-Z]+$/ )){
-        alert("城市名称请出入英文或汉字");
+        alert("城市名称请输入英文或汉字");
         cityInput.value = "";
         return;
     }
@@ -40,7 +40,6 @@ function addAqiData() {
 function renderAqiList() {
     var str = "";
     for(var city in aqiData){
-        console.log(1)
         str +=   `<tr>
                      <td>${city}</td>
                      <td>${aqiData[city]}</td>
@@ -49,8 +48,6 @@ function renderAqiList() {
                      </td>
                  </tr>`;
      }
-    console.log(aqiData);
-    console.log(str);
     aqiTbody.innerHTML = str;
 }
 
@@ -73,7 +70,6 @@ function delBtnHandle(city) {
 }
 
 function init() {
-
     // 在这下面给add-btn绑定一个点击事件，点击时触发addBtnHandle函数
     addBtn.onclick = addBtnHandle;
     // 想办法给aqi-table中的所有删除按钮绑定事件，触发delBtnHandle函数
