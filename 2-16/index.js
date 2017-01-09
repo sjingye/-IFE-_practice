@@ -29,7 +29,6 @@ function addAqiData() {
         return;
     }
     aqiData[cityValue] = valueValue;
-
     cityInput.value = "";
     valueInput.value = "";
 }
