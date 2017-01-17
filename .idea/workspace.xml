@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b654471d-3dc5-44e0-b312-d2755822a7d6" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2-17/index.css" afterPath="$PROJECT_DIR$/2-17/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2-17/index.html" afterPath="$PROJECT_DIR$/2-17/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2-17/index.js" afterPath="$PROJECT_DIR$/2-17/index.js" />
     </list>
     <ignored path="IFE-practice.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -282,15 +279,15 @@
       <workItem from="1483842103415" duration="20284000" />
       <workItem from="1483948989192" duration="14642000" />
       <workItem from="1484016315195" duration="14900000" />
-      <workItem from="1484647338795" duration="10797000" />
+      <workItem from="1484647338795" duration="10913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60623000" />
+    <option name="totallyTimeSpent" value="60739000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
