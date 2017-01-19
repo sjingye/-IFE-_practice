@@ -80,7 +80,7 @@ function renderChart() {
             nowTime.innerHTML = graTimes[2];
     }
 };
-// renderChart();
+
 /**
  * 日、周、月的radio事件点击时的处理函数
  */
@@ -148,7 +148,6 @@ function initAqiChartData() {
     // 将原始的源数据处理成图表需要的数据格式
     // 处理好的数据存到 chartData 中
     var nowCityData = aqiSourceData[pageState.nowSelectCity];
-
     switch (pageState.nowGraTime){
         case "day":
             chartData = nowCityData;
@@ -198,6 +197,6 @@ function init() {
     initGraTimeForm();
     initCitySelector();
     initAqiChartData();
+    renderChart();
 }
-
 init();
