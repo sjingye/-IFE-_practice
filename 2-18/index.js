@@ -20,28 +20,30 @@ function addEvent(element,event,listener) {
         element["on"+event] = listener;
     }
 };
-
-//为各个按钮加上点击事件
-addEvent(lin,"click",function () {
+//提取出满足条件的输入值
+function getValue() {
     var val = inp.value.trim();
     if( !(/^(?:[1-9]\d|100)$/g).test(val) ){
-        alert("请输入10-100之间的正整数");
+        alert("请输入10-100之间的整数");
+        return false;
     }
     else{
-        arr.unshift( val );
+        return val;
     }
-    draw();
+}
+//为各个按钮加上点击事件
+addEvent(lin,"click",function () {
+    if( getValue() ){
+        arr.unshift( getValue() );
+        draw();
+    }
     inp.value="";
 });
 addEvent(rin,"click",function () {
-    var val = inp.value.trim();
-    if( !(/^(?:[1-9]\d|100)$/g).test(val) ){
-        alert("请输入10-100之间的正整数");
-    }
-    else{
+    if( getValue() ){
         arr.push( getValue() );
+        draw();
     }
-    draw();
     inp.value="";
 });
 
@@ -69,4 +71,5 @@ function draw() {
         return "<li>"+item+"</li>";
     }).join("");
 };
+
 
