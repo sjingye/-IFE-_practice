@@ -8,7 +8,6 @@
      }
  };
  */
-
 // 以下两个函数用于随机模拟生成测试数据
 function getDateStr(dat) {
     var y = dat.getFullYear();
@@ -44,7 +43,7 @@ var aqiSourceData = {
 var aqiChartTable = document.getElementsByClassName("aqi-chart-table")[0];
 var nowCity = document.querySelector(".aqi-chart-wrap h3 span");
 var nowTime = document.querySelector(".aqi-chart-wrap h3 em");
-var graTimesInputs = document.querySelectorAll("#form-gra form input");
+var graTimesInput = document.querySelector("#form-gra form");
 var citySelect = document.getElementById("city-select");
 
 // 用于渲染图表的数据
@@ -119,12 +118,8 @@ function citySelectChange() {
  * 初始化日、周、月的radio事件，当点击时，调用函数graTimeChange
  */
 function initGraTimeForm() {
-    for (let i=0;i<graTimesInputs.length;i++){
-        graTimesInputs[i].onclick = function () {
-            graTimeChange();
-        }
-    }
-}
+    graTimesInput.addEventListener("change",graTimeChange);
+};
 
 /**
  * 初始化城市Select下拉选择框中的选项
