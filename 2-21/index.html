@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>2-20</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>2-21</title>
+    <link rel="stylesheet" href="./src/css/index.css">
 </head>
 <body>
-<form>
-    <textarea id="inp" placeholder="请输入字符，并用符号隔开"></textarea>
-    <button class="btn">左侧入</button>
-    <button class="btn">右侧入</button>
-    <button class="btn">左侧出</button>
-    <button class="btn">右侧出</button>
-    <input type="text" class="query" type="text">
-    <button class="btn">查询</button>
-</form>
-<ul class="wrap"></ul>
-<script src="./index.js"></script>
+<div class="wrap">
+    <div class="tag">
+        <input type="text" class="tag-inp" placeholder="请输入Tag">
+        <ul class="display tagContainer"></ul>
+    </div>
+    <div class="hobby">
+        <textarea class="hobby-inp" placeholder="请输入兴趣爱好"></textarea>
+        <button class="btn">确认兴趣爱好</button>
+        <ul class="display hobbyContainer"></ul>
+    </div>
+</div>
+<script src="./dist/index.js"></script>
 </body>
 </html>
