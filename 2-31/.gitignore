@@ -46,11 +46,3 @@ Temporary Items
 
 node_modules/*/**
 .idea/*/**
-*.iml
-2-21/.idea/misc.xml
-*.txt
-2-29/node_modules/.npminstall.done
-2-21/.idea/workspace.xml
-*.xml
-2-21/node_modules/.npminstall.done
-*.done
