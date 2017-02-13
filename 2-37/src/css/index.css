@@ -94,11 +94,11 @@ header ul a{
 }
 .login-box-header{
     overflow: hidden;
-    margin-bottom: 20px;
-    height: 30px;
+    height: 40px;
+    line-height: 40px;
 }
 .login-box-header button{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     float: right;
 }

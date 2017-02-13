@@ -102,6 +102,7 @@ let mask = document.querySelector(".mask");
 let login = document.querySelector("header li");
 let closeBtn = document.querySelector(".close-btn");
 let loginBox = document.querySelector(".login-box");
+let loginBoxHeader = document.querySelector(".login-box-header");
 class Emersion {
     constructor(container) {
         this.container = container;
@@ -114,6 +115,20 @@ class Emersion {
         this.container.style.display = "block";
         mask.style.display = "block";
     }
+    drag(event) {
+        let e = __WEBPACK_IMPORTED_MODULE_0__event_js__["a" /* default */].getEvent(event);
+        let disX = e.clientX - loginBox.offsetLeft;
+        let disY = e.clientY - loginBox.offsetTop;
+        __WEBPACK_IMPORTED_MODULE_0__event_js__["a" /* default */].addEvent(loginBoxHeader, "mousemove", function (event) {
+            let e = __WEBPACK_IMPORTED_MODULE_0__event_js__["a" /* default */].getEvent(event);
+            loginBox.style.left = e.clientX - disX + "px";
+            loginBox.style.top = e.clientY - disY + "px";
+        });
+        __WEBPACK_IMPORTED_MODULE_0__event_js__["a" /* default */].addEvent(loginBoxHeader, "mouseup", function () {
+            loginBoxHeader.onmousedown = null;
+            loginBoxHeader.onmousemove = null;
+        });
+    }
     init() {
         let self = this;
         __WEBPACK_IMPORTED_MODULE_0__event_js__["a" /* default */].addEvent(mask, "click", function () {
@@ -125,9 +140,10 @@ class Emersion {
         __WEBPACK_IMPORTED_MODULE_0__event_js__["a" /* default */].addEvent(login, "click", function () {
             self.show();
         });
+        this.drag(event);
     }
 };
-var a = new Emersion(loginBox);
+let a = new Emersion(loginBox);
 a.init();
 
 /***/ })
