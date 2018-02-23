@@ -46,6 +46,7 @@ Temporary Items
 
 node_modules/*/**
 .idea/*/**
+.vscode
 *.iml
 2-21/.idea/misc.xml
 *.txt
