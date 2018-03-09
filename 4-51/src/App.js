@@ -3,9 +3,12 @@ import Table from './components/Table/Table';
 import './App.css';
 
 class App extends Component {
+  handleClick = () => {
+    console.log('this is:', this);
+  }
   render() {
     return (
-      <div className="App">
+      <div className="App" onClick={this.handleClick}>
         <header className="App-header">
           <h1 className="App-title">问卷管理</h1>
           <p className="App-des">我的问卷</p>
